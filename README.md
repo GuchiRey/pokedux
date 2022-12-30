@@ -1,4 +1,4 @@
-## 1 Check node version 16 onwards
+## 1- Check node version 16 onwards
 
 node -v
 
@@ -6,6 +6,10 @@ node -v
 
 nvm use 16
 
-## 2 Install the dependencies
+## 2- Install the dependencies
 
 npm install
+
+## 3- Run project
+
+npm run start

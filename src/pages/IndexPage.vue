@@ -12,6 +12,9 @@
             <q-checkbox v-model="keepSelectedToDelete" @click="keepSelectedToDeleteStatus" class="keepSelectedToDelete-checkbox" />
             <q-btn :disabled="!keepSelectedToDelete" label="Delete" @click="deletePokemons" class="keepSelectedToDelete-button" />
           </div>
+          <div>
+            <q-btn label="Create new pokemon" @click="createNewPokemon" class="create-button" />
+          </div>
           <div class="search-bar-blue-body">
             <input v-model="pokemonQuery" @keyup="searchPokemons" type="text" class="search-bar-blue" style="max-width: 400px" placeholder="Search pokemon">
             <img class="search-bar-find" src="../assets/search.svg" alt="">
@@ -60,9 +63,6 @@
           </div>
         </div>
       </a>
-    </div>
-    <div class="container create-button-container">
-      <q-btn label="Create new pokemon" @click="createNewPokemon" class="create-button" />
     </div>
   </q-page>
 </template>

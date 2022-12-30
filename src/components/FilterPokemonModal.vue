@@ -3,7 +3,7 @@
     <q-icon name="close" v-close-popup @click="closeModal" class="close-button close-button-modal" />
     <q-card class="modal-background modal-background-bottom p-4" >
       <q-card-section class="position-relative modal-header">
-        <div>
+        <div class="w-100">
           <div class="card-name" style="margin-bottom: 20px">Filtrer pokemon list</div>
           <q-input class="select-input mb-4" v-model="moveSelected" label="Movement number" />
           <q-input class="select-input mb-4" v-model="levelSelected" label="Experience level" />
