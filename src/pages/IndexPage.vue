@@ -18,13 +18,13 @@
           <div class="search-bar-blue-body">
             <input v-model="pokemonQuery" @keyup="searchPokemons" type="text" class="search-bar-blue" style="max-width: 400px" placeholder="Search pokemon">
             <img class="search-bar-find" src="../assets/search.svg" alt="">
+            <a @click="redirectFilters" class="search-bar-filter-container"><img class="search-bar-filter" src="../assets/filters.svg" alt=""></a>
           </div>
-          <a @click="redirectFilters" class="search-bar-filter-container"><img class="search-bar-filter" src="../assets/filters.svg" alt=""></a>
         </div>
       </div>
     </div>
     <q-pagination
-      v-if="!loading && pokemonsFiltered.length >= 16 || pokemonsRender.length"
+      v-if="!loading"
       class="pagination"
       color="purple"
       v-model="currentPage"

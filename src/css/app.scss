@@ -284,6 +284,7 @@ html {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .card {
   width: 300px;
@@ -438,4 +439,39 @@ html {
   border: none;
   padding: 15px;
   width: 150px;
+}
+.q-pagination {
+  margin: auto;
+}
+.q-select__dialog {
+  width: 300px!important;
+}
+@media(max-width:1000px){
+  .top-section-container {
+    height: 230px;
+    display: block;
+    padding: 0;
+  }
+  .top-section {
+    display: block;
+  }
+  .keepSelectedToDelete-box {
+    margin: 15px 0;
+  }
+  .keepSelectedToDelete-text {
+    font-size: 15px;
+  }
+  .search-bar-blue-body {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .q-card > div {
+    width: auto;
+  }
+  .q-dialog__inner--minimized > div {
+    max-height: calc(100vh - 80px)!important;
+  }
+  .search-bar-blue-container {
+    display: block;
+  }
 }
