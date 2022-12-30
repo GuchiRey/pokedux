@@ -6,6 +6,6 @@ node -v
 
 nvm use 16
 
-## 1 Install the dependencies
+## 2 Install the dependencies
 
 npm install
