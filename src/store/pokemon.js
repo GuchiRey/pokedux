@@ -68,10 +68,8 @@ export const pokemonStore = defineStore('pokemon', {
     filterPokemons(filters) {
       this.filters = filters
       let filterActive = filters.name || filters.moves || filters.level || filters.types
-      console.log(filterActive, filters.navigator, this.pokemonsFiltered.length)
       if(!filterActive && filters.navigator && !this.pokemonsFiltered.length) {
         this.pokemonsFiltered = [...this.pokemons]
-        console.log(this.pokemonsFiltered.length)
       }
 
       if(filterActive) {

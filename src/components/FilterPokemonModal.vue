@@ -2,6 +2,7 @@
   <q-dialog v-model="showFilterModal">
     <q-icon name="close" v-close-popup @click="closeModal" class="close-button close-button-modal" />
     <q-card class="modal-background modal-background-bottom p-4" >
+      <q-icon name="close" v-close-popup class="close-button close-button-modal" />
       <q-card-section class="position-relative modal-header">
         <div class="w-100">
           <div class="card-name" style="margin-bottom: 20px">Filtrer pokemon list</div>

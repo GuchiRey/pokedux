@@ -24,16 +24,15 @@
       </div>
     </div>
     <q-pagination
-      v-if="!loading"
+      v-if="!loading && pokemonsFiltered.length >= 16 || pokemonsRender.length"
       class="pagination"
       color="purple"
       v-model="currentPage"
       :max="pokemonLenght / 16"
       :max-pages="16"
-      direction-links
     />
     <div class="container search-result-box search-result-box-results" v-if="searchStatus.active">
-      <div> {{ searchStatus.count }} {{ searchStatus.count > 1 ? "Resultados" : "Resultado" }}</div>
+      <div> {{ searchStatus.count }} {{ searchStatus.count > 1 ? "Results" : "Result" }}</div>
       <a @click="clear" class="clear-filters"> Clear filters </a>
     </div>
     <div class="container search-result-box" v-if="!pokemonsRender.length && pokemons.length">
