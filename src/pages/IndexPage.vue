@@ -114,7 +114,11 @@ export default defineComponent({
         pokemon.selected = !pokemon.selected
         this.pokemons.forEach((p) => {
           if(p.name === pokemon.name) {
-            p.selected = true
+            if(p.selected) {
+              p.selected = true
+            } else {
+              p.selected = false
+            }
           }
         })
       }
